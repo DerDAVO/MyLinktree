@@ -16,6 +16,27 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 400px;
+    border: 2px solid transparent; 
+    border-radius: 10px; 
+    animation: luz-recorre-borde 4s linear infinite;
+}
+
+@keyframes luz-recorre-borde {
+    0% {
+        box-shadow: 0 0 10px 0 #1976D2; 
+    }
+    25% {
+        box-shadow: 0 0 10px 10px #1976D2;
+    }
+    50% {
+        box-shadow: 0 0 10px 0 #1976D2; 
+    }
+    75% {
+        box-shadow: 0 0 10px -10px #1976D2;
+    }
+    100% {
+        box-shadow: 0 0 10px 0 #1976D2; 
+    }
 }
 
 .profile-pic {
